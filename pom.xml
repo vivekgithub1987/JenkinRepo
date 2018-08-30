@@ -125,25 +125,7 @@
       <artifactId>sonar-maven-plugin</artifactId>
       <version>3.2</version>
   </plugin>
-	<plugin>
-   <groupId>org.sonatype.plugins</groupId>
-   <artifactId>nexus-staging-maven-plugin</artifactId>
-   <version>1.6.8</version>
-   <executions>
-      <execution>
-         <id>default-deploy</id>
-         <phase>deploy</phase>
-         <goals>
-            <goal>deploy</goal>
-         </goals>
-      </execution>
-   </executions>
-   <configuration>
-      <serverId>Nexus2</serverId>
-      <nexusUrl>http://localhost:6061/nexus</nexusUrl>
-      <skipStaging>true</skipStaging>
-   </configuration>
-</plugin>     
+	
     </plugins>
   </build>
 	<distributionManagement>
